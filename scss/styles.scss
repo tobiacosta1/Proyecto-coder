@@ -1,11 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+@media (max-width: 767px){
+
+}
+
+
+@media (min-width: 768px) and (max-width: 990) {
+  
+}
+
+
+@media (min-width: 991px){
+  
+}
+
+
 header {
-  background-color: rgb(149, 195, 248);
+  background-color:  rgb(149, 195, 248);
 }
 
 main {
@@ -13,7 +28,7 @@ main {
 }
 
 footer {
-  background-color: rgb(149, 195, 248);
+  background-color:  rgb(149, 195, 248);
 }
 
 a {
@@ -27,6 +42,7 @@ a {
 
 h1 {
   color: white;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -39,10 +55,10 @@ h3 {
 
 .promo {
   display: inline-block;
-  margin: 15px;
-  padding: 15px;
+  margin: 5px;
+  padding: 5px;
   position: relative;
-  left: 75px;
+  left: 50px;
 }
 
 img {
@@ -53,10 +69,13 @@ img {
   width: 150px;
 }
 
+
+
 .navBar {
   display: flex;
   justify-content: end;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 #mapa {
@@ -69,6 +88,7 @@ img {
 
 .h2 {
   color: black;
+  flex-wrap: wrap;
 }
 
 .h3 {
@@ -79,25 +99,14 @@ img {
   font-size: 20px;
 }
 
-.tarjeta {
-  background-color: rgb(149, 195, 248);
-  width: 300px;
-  border: solid 5px;
-  transform: translateX(50px);
-  padding: 15px;
-  margin: 15px;
-  display: inline-block;
-}
+
 
 .productos12 {
-width: 280px;
+  width: 280px;
 
 }
 
-.button {
-  background-color: black;
-  color: white;
-}
+
 
 .formulario {
   display: grid;
@@ -110,11 +119,9 @@ width: 280px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.logo123 {
+.logo123{
   width: 150px;
 }
-
 h2 {
   text-align: center;
 }
@@ -130,30 +137,23 @@ label {
   font-weight: bold;
 }
 
-input[type=text],
-input[type=email] {
+input[type="text"],
+input[type="email"] {
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+
+
+.button:hover {
+  background-color: #45a049;
+
 }
 
-button:hover {
-  background-color: #45a049;
-  }
-
-button:active {
+.button:active{
   background-color: black;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -166,25 +166,50 @@ button:active {
   text-align: center;
   display: inline-block;
   width: 100px;
+  flex-wrap: wrap;
 }
 
 .promo img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  flex-wrap: wrap;
 }
 
 .promo h3 {
   margin-top: 10px;
+  flex-wrap: wrap;
 }
-
-.foto-logo {
+.foto-logo{
   width: 150px;
 }
 
-.imagen-tarjeta {
-  width: 250px;
+
+.tarjeta {
+  background-color:  rgb(149, 195, 248);
+  width: 300px;
+  border: solid 5px;
+  transform: translateX(50px);
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+
+  .imagen-tarjeta{
+    width: 250px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
 }
+  
 
-/*# sourceMappingURL=styles.css.map */
-
+  
